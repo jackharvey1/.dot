@@ -1,0 +1,52 @@
+[color]
+  ui = true
+[diff]
+  tool = vimdiff
+[log]
+  decorate = full
+  pretty = oneline
+  format = graph
+[difftool]
+  prompt = false
+[apply]
+  whitespace = nowarn
+[gui]
+  warndetachedcommit = true
+  tabsize = 4
+[push]
+  default = simple
+[user]
+	name = Jack Harvey
+	email = jack.harvey@news.co.uk
+[core]
+	excludesfile = /Users/jharvey1/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/jharvey1/.stCommitMsg
+[alias]
+	co = checkout
+	sts = status
+	sta = stash
+	a = add .
+	cm = commit -am
+	graph = log --decorate=full --graph --oneline --all
+	wash = remote prune origin
+	re = reset --hard
+	f = fetch
+	pl = pull
+	ps = push
+	psf = push --force
+	pop = stash pop
+	rb = rebase
+	rbd = rebase dev
+	rbm = rebase master
+	rbc = rebase -i HEAD^^
+	rbcc = rebase -i HEAD^^^
+	rbccc = rebase -i HEAD^^^^
+	woohoo = "!f(){ git cm 'fix me up' && git rebase -i HEAD^^; };f"
+	d = diff

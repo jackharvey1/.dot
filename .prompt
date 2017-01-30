@@ -1,0 +1,29 @@
+VAR_BLUE="\[\033[0;34m\]"
+VAR_LIGHT_BLUE="\[\033[1;34m\]"
+VAR_GRAY="\[\033[1;30m\]"
+VAR_LIGHT_GRAY="\[\033[0;37m\]"
+VAR_CYAN="\[\033[0;36m\]"
+VAR_LIGHT_CYAN="\[\033[1;36m\]"
+VAR_PURPLE="\[\033[0;35m\]"
+VAR_LIGHT_PURPLE="\[\033[1;35m\]"
+VAR_GREEN="\[\033[0;32m\]"
+VAR_LIGHT_GREEN="\[\033[1;32m\]"
+VAR_RED="\[\033[0;31m\]"
+VAR_LIGHT_RED="\[\033[1;31m\]"
+VAR_YELLOW="\[\033[1;33m\]"
+VAR_NO_COLOUR="\[\033[0m\]"
+
+VAR_GREEN_BACK="\[\033[0;42m\]"
+function parse_git_branch {
+   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+
+export PS1="$VAR_LIGHT_PURPLE\u@\h:$VAR_LIGHT_RED\$HPWD $VAR_YELLOW\$(parse_git_branch)$ $VAR_NO_COLOUR"
+
+PROMPT_COMMAND='case $PWD in
+        $HOME) HPWD="~";;
+        $HOME/*/*) HPWD="${PWD#"${PWD%/*/*}/"}";;
+        $HOME/*) HPWD="~/${PWD##*/}";;
+        /*/*/*) HPWD="${PWD#"${PWD%/*/*}/"}";;
+        *) HPWD="$PWD";;
+      esac'

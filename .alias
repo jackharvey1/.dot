@@ -1,0 +1,19 @@
+alias el='~/code/news/elasticsearch-1.7.0/bin/elasticsearch'
+
+alias gitk='/usr/local/bin/gitk'
+
+alias la='ls -a -CFG'
+
+alias ksm='karma start test/karma.conf.j's
+
+alias render='cd ~/code/news/cps-content-render/src/'
+alias api='cd ~/code/news/cps-content-api/src/'
+alias ingest='cd ~/code/news/cps-content-ingest/src/'
+alias learn='cd ~/code/learn/'
+alias code='cd ~/code'
+alias me='cd ~/code/me'
+
+alias cd..='cd ..'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
