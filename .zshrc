@@ -59,8 +59,6 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
-
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -75,7 +73,8 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
-for DOTFILE in "/Users/jharvey1/."{functions,node,rvm,alias} do
+source $ZSH/oh-my-zsh.sh
+for DOTFILE in "/Users/jharvey1/."{alias,functions,node,rvm} do
 do
   [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
