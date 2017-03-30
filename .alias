@@ -4,7 +4,9 @@ alias gitk='/usr/local/bin/gitk'
 
 alias la='ls -a -CFG'
 
-alias ksm='karma start test/karma.conf.j's
+alias ksm='karma start test/karma.conf.js'
+
+alias pdflatex='/usr/local/texlive/2016/bin/x86_64-darwin/pdflatex'
 
 alias render='cd ~/code/news/cps-content-render/src/'
 alias api='cd ~/code/news/cps-content-api/src/'
