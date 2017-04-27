@@ -6,6 +6,10 @@ alias la='ls -a -CFG'
 
 alias ksm='karma start test/karma.conf.js'
 
+alias 'mvt -a'='npm run build -- --all'
+alias 'mvt -w'='npm run build -- --www'
+alias 'mvt -j'='npm run build -- --join'
+
 alias pdflatex='/usr/local/texlive/2016/bin/x86_64-darwin/pdflatex'
 
 alias render='cd ~/code/news/cps-content-render/src/'
