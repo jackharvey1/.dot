@@ -5,7 +5,7 @@ export ZSH=/Users/jharvey1/.oh-my-zsh
 
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status nvm battery history time)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(nvm battery history time)
 
 # Uncomment the following line to use case-sensitive completion.
 CASE_SENSITIVE="true"
