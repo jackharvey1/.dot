@@ -6,10 +6,6 @@ alias la='ls -a -CFG'
 
 alias ksm='karma start test/karma.conf.js'
 
-alias 'mvt -a'='npm run build -- --all'
-alias 'mvt -w'='npm run build -- --www'
-alias 'mvt -j'='npm run build -- --join'
-
 alias pdflatex='/usr/local/texlive/2016/bin/x86_64-darwin/pdflatex'
 
 alias render='cd ~/code/news/cps-content-render/src/'
@@ -17,13 +13,9 @@ alias api='cd ~/code/news/cps-content-api/src/'
 alias ingest='cd ~/code/news/cps-content-ingest/src/'
 alias storage='cd ~/code/news/cps-content-storage/src/'
 alias mvt='cd ~/code/news/ab-test-experiments/src'
+alias comp='cd ~/code/news/times-components/'
 alias learn='cd ~/code/learn/'
 alias code='cd ~/code'
 alias me='cd ~/code/me'
 
 alias disc_agent='aws --profile=core-svcs --region=eu-west-1 ec2 describe-instances --filters Name=tag:Name,Values=TeamCityAgentStatic Name=instance-state-name,Values=running --query '\''Reservations[].Instances[].{IP:PrivateIpAddress,ID:InstanceId,AZ:Placement.AvailabilityZone}'\'' --output text'
-
-alias cd..='cd ..'
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
