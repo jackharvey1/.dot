@@ -3,7 +3,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/jharvey1/.oh-my-zsh
 
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="geometry/geometry"
 
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(nvm battery history time)
 
