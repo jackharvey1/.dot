@@ -2,6 +2,8 @@ alias el='~/code/news/elasticsearch-1.7.0/bin/elasticsearch'
 
 alias gitk='/usr/local/bin/gitk'
 
+alias gyarn='rm yarn.lock && yarn && git add . && git commit --amend --no-edit && git push -f'
+
 alias la='ls -a -CFG'
 
 alias ksm='karma start test/karma.conf.js'
