@@ -52,17 +52,43 @@ endif
 
 set runtimepath+=~/.vim/dein/repos/github.com/Shougo/dein.vim
 
-if dein#load_state('~/.vim/dein')
-	call dein#begin('~/.vim/dein')
+" using vim-plug
+call plug#begin('~/.vim/plugged')
+    Plug 'scrooloose/nerdtree'
 
-	call dein#add('~/.vim/dein/repos/github.com/Shougo/dein.vim')
-	call dein#add('Shougo/neocomplete.vim')
-	call dein#add('~/.vim/dein/repos/github.com/vim-javascript-syntax')
-	call dein#add('~/.vim/dein/repos/github.com/NERD_tree')
-	call dein#add('~/.vim/dein/repos/github.com/vim-airline')
+    "syntax highlighting
+    Plug 'neovim/node-host', { 'build': 'npm install' }
+    Plug 'billyvg/tigris.nvim', { 'build': './install.sh' }
 
-	call dein#end()
-	call dein#save_state()
-endif
+    "linting
+    Plug 'vim-syntastic/syntastic'
+    "only look for local eslint
+    Plug 'mtscout6/syntastic-local-eslint.vim'
+
+
+    "status bar
+    Plug 'vim-airline/vim-airline'
+call plug#end()
+
+" syntastic setup
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers = ['eslint']
+
+function! RenameFile()
+    let old_name = expand('%')
+    let new_name = input('New file name: ', expand('%'), 'file')
+    if new_name != '' && new_name != old_name
+        exec ':saveas ' . new_name
+        exec ':silent !rm ' . old_name
+        redraw!
+    endif
+endfunction
+map <leader>n :call rename()<cr>
 
 filetype plugin indent on
