@@ -19,7 +19,7 @@
 	name = Jack Harvey
 	email = jack.harvey@news.co.uk
 [core]
-	excludesfile = /Users/jharvey1/.gitignore_global
+	excludesfile = /Users/jharvey1/.dot/.gitignore
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
