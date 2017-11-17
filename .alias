@@ -17,6 +17,7 @@ alias storage='cd ~/code/news/cps-content-storage/src/'
 alias mvt='cd ~/code/news/ab-test-experiments/src'
 alias comp='cd ~/code/news/times-components/'
 alias learn='cd ~/code/learn/'
+alias papi='cd ~/code/news/times-public-api'
 alias code='cd ~/code'
 alias me='cd ~/code/me'
 
