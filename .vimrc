@@ -2,12 +2,66 @@
 set list
 set listchars=eol:↵,tab:.\ ,trail:·,extends:→,precedes:←
 
+set encoding=utf8
+"fix backspacing issues
+set backspace=indent,eol,start
+
+" using vim-plug
+call plug#begin('~/.vim/plugged')
+    "colour schemes
+    "Plug 'yuttie/hydrangea-vim'
+    "Plug 'jdkanani/vim-material-theme'
+    Plug 'altercation/vim-colors-solarized'
+
+    Plug 'vim-airline/vim-airline-themes'
+
+    Plug 'scrooloose/nerdtree'
+
+    "syntax highlighting
+    Plug 'neovim/node-host', { 'build': 'npm install' }
+    Plug 'billyvg/tigris.nvim', { 'build': './install.sh' }
+
+    "linting
+    Plug 'vim-syntastic/syntastic'
+    "only look for local eslint
+    Plug 'mtscout6/syntastic-local-eslint.vim'
+    " prettier
+    Plug 'prettier/vim-prettier', {
+      \ 'do': 'yarn install',
+      \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown'] }
+
+    "status bar
+    Plug 'vim-airline/vim-airline'
+
+    "graphql syntax highlighting
+    Plug 'jparise/vim-graphql'
+
+    Plug 'flowtype/vim-flow', {
+            \ 'autoload': {
+            \     'filetypes': 'javascript'
+            \ },
+            \ 'build': {
+            \     'mac': 'npm install -g flow-bin',
+            \     'unix': 'npm install -g flow-bin'
+            \ }}
+
+    Plug 'ryanoasis/vim-devicons'
+call plug#end()
+
 set t_Co=256
 syntax on
 syntax enable
 set relativenumber
 set background=dark
+
 colorscheme monokai
+let g:solarized_termtrans = 1
+let g:airline_theme='solarized'
+
+set guifont=Cousine:h11
+set hlsearch
+
+let g:airline_powerline_fonts = 1
 
 " tabbing shortcuts
 nnoremap <F8> :tabprevious<CR>
@@ -34,42 +88,6 @@ set statusline+=%c,     "cursor
 set statusline+=%l/%L   "cursor line/total lines
 set statusline+=\ %P    "percent through file
 
-" NERDTree
-"" shortcut
-map <C-n> :NERDTreeToggle<CR>
-
-"" open automatically
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-
-"" close if only file
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
-" dein settings
-if &compatible
-	set nocompatible
-endif
-
-set runtimepath+=~/.vim/dein/repos/github.com/Shougo/dein.vim
-
-" using vim-plug
-call plug#begin('~/.vim/plugged')
-    Plug 'scrooloose/nerdtree'
-
-    "syntax highlighting
-    Plug 'neovim/node-host', { 'build': 'npm install' }
-    Plug 'billyvg/tigris.nvim', { 'build': './install.sh' }
-
-    "linting
-    Plug 'vim-syntastic/syntastic'
-    "only look for local eslint
-    Plug 'mtscout6/syntastic-local-eslint.vim'
-
-
-    "status bar
-    Plug 'vim-airline/vim-airline'
-call plug#end()
-
 " syntastic setup
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -80,15 +98,23 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
 
-function! RenameFile()
-    let old_name = expand('%')
-    let new_name = input('New file name: ', expand('%'), 'file')
-    if new_name != '' && new_name != old_name
-        exec ':saveas ' . new_name
-        exec ':silent !rm ' . old_name
-        redraw!
-    endif
-endfunction
-map <leader>n :call rename()<cr>
+"don't grep node_modules
+set wildignore+=src/node_modules
+set wildignore+=node_modules
+set wildignore+=/Users/**/node_modules/** "disgusting hack
 
-filetype plugin indent on
+"" open automatically
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+if exists("webdevicons#refresh")
+    call webdevicons#refresh()
+endif
+let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '
+let g:WebDevIconsNerdTreeGitPluginForceVAlign = 1
+
+" NERDTree config
+let NERDTreeShowHidden=1
+map <C-n> :NERDTreeToggle<CR>
+let NERDTreeIgnore = ['\.swp$', '\.swo$']
