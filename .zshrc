@@ -29,7 +29,7 @@ plugins=(git aws npm)
 # fi
 
 source $ZSH/oh-my-zsh.sh
-for DOTFILE in "/Users/jharvey1/."{alias,functions,vars,node,rvm} do
+for DOTFILE in "/Users/jharvey1/."{alias,functions,vars,node,rvm,eslintrc} do
 do
   [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
