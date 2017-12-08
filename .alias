@@ -22,5 +22,6 @@ alias code='cd ~/code'
 alias me='cd ~/code/me'
 
 alias disc_agent='aws --profile=core-svcs --region=eu-west-1 ec2 describe-instances --filters Name=tag:Name,Values=TeamCityAgentStatic Name=instance-state-name,Values=running --query '\''Reservations[].Instances[].{IP:PrivateIpAddress,ID:InstanceId,AZ:Placement.AvailabilityZone}'\'' --output text'
+alias disc_agentx='aws --profile=core-svcs --region=eu-west-1 ec2 describe-instances --filters Name=tag:Name,Values=IntegrationTestBoy Name=instance-state-name,Values=running --query '\''Reservations[].Instances[].{IP:PrivateIpAddress,ID:InstanceId,AZ:Placement.AvailabilityZone}'\'' --output text'
 
 alias pcurl='curl --silent -o /dev/null -v -H "Pragma: akamai-x-cache-on, akamai-x-cache-remote-on, akamai-x-check-cacheable, akamai-x-get-cache-key, akamai-x-get-extracted-values, akamai-x-get-nonces, akamai-x-get-ssl-client-session-id, akamai-x-get-true-cache-key, akamai-x-serial-no"'
