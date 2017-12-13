@@ -29,24 +29,13 @@
 [commit]
 	template = /Users/jharvey1/.stCommitMsg
 [alias]
-	co = checkout
-	sts = status
-	sta = stash
-	a = add .
-	cm = commit -am
-	graph = log --decorate=full --graph --oneline --all
-	wash = remote prune origin
-	re = reset --hard
-	f = fetch
-	pl = pull
-	ps = push
-	psf = push --force
-	pop = stash pop
-	rb = rebase
-	rbd = rebase dev
-	rbm = rebase master
-	rbc = rebase -i HEAD^^
-	rbcc = rebase -i HEAD^^^
-	rbccc = rebase -i HEAD^^^^
-	woohoo = "!f(){ git cm 'fix me up' && git rebase -i HEAD^^; };f"
-	d = diff
+    graph = log --decorate=full --graph --oneline --all
+    wash = remote prune origin
+    rbd = rebase dev
+    rbm = rebase master
+    rbc = rebase -i HEAD^^
+    rbcc = rebase -i HEAD^^^
+    rbccc = rebase -i HEAD^^^^
+    #woohoo = "!f(){ git cm 'fix me up' && git rebase -i HEAD^^; };f"
+    woohoo = "!f(){ git add . && git commit --amend --no-edit; };f"
+    insane = "!f(){ git woohoo && gp -f; };f"
