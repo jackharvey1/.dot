@@ -38,4 +38,4 @@
     rbccc = rebase -i HEAD^^^^
     #woohoo = "!f(){ git cm 'fix me up' && git rebase -i HEAD^^; };f"
     woohoo = "!f(){ git add . && git commit --amend --no-edit; };f"
-    insane = "!f(){ git woohoo && gp -f; };f"
+    insane = "!f(){ git woohoo && git push -f; };f"
