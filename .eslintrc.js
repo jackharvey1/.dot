@@ -14,7 +14,7 @@ module.exports = {
     },
     "extends": "eslint:recommended",
     "parserOptions": {
-        "ecmaVersion": 2016,
+        "ecmaVersion": 2017,
         "sourceType": "module"
     },
     "rules": {
@@ -140,7 +140,7 @@ module.exports = {
         "no-mixed-operators": "error",
         "no-mixed-requires": "error",
         "no-multi-spaces": "error",
-        "no-multi-str": "error",
+        "no-multi-str": "off",
         "no-multiple-empty-lines": "error",
         "no-native-reassign": "error",
         "no-negated-condition": "warn",
