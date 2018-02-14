@@ -20,6 +20,7 @@ alias learn='cd ~/code/learn/'
 alias papi='cd ~/code/news/times-public-api'
 alias code='cd ~/code'
 alias me='cd ~/code/me'
+alias pew='cd ~/code/me/pewpew'
 
 alias disc_agent='aws --profile=core-svcs --region=eu-west-1 ec2 describe-instances --filters Name=tag:Name,Values=TeamCityAgentStatic Name=instance-state-name,Values=running --query '\''Reservations[].Instances[].{IP:PrivateIpAddress,ID:InstanceId,AZ:Placement.AvailabilityZone}'\'' --output text'
 alias disc_agentx='aws --profile=core-svcs --region=eu-west-1 ec2 describe-instances --filters Name=tag:Name,Values=IntegrationTestBoy Name=instance-state-name,Values=running --query '\''Reservations[].Instances[].{IP:PrivateIpAddress,ID:InstanceId,AZ:Placement.AvailabilityZone}'\'' --output text'
