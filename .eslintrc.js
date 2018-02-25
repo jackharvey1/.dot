@@ -15,7 +15,11 @@ module.exports = {
     "extends": "eslint:recommended",
     "parserOptions": {
         "ecmaVersion": 2017,
-        "sourceType": "module"
+        "sourceType": "module",
+        "ecmaFeatures": {
+           "jsx": true,
+            "modules": true
+        }
     },
     "rules": {
         "accessor-pairs": "error",
