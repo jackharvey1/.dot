@@ -185,7 +185,7 @@ module.exports = {
         "no-undef-init": "error",
         "no-undefined": "error",
         "no-underscore-dangle": "off",
-        "no-unmodified-loop-condition": "error",
+        "no-unmodified-loop-condition": "off",
         "no-unneeded-ternary": "error",
         "no-unused-expressions": "warn",
         "no-use-before-define": "off",
