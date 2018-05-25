@@ -15,11 +15,7 @@ module.exports = {
     "extends": "eslint:recommended",
     "parserOptions": {
         "ecmaVersion": 2017,
-        "sourceType": "module",
-        "ecmaFeatures": {
-           "jsx": true,
-            "modules": true
-        }
+        "sourceType": "module"
     },
     "rules": {
         "accessor-pairs": "error",
@@ -176,7 +172,7 @@ module.exports = {
         "no-shadow": "off",
         "no-shadow-restricted-names": "error",
         "no-spaced-func": "error",
-        "no-sync": "error",
+        "no-sync": "off",
         "no-tabs": "error",
         "no-template-curly-in-string": "error",
         "no-ternary": "off",
@@ -185,7 +181,7 @@ module.exports = {
         "no-undef-init": "error",
         "no-undefined": "error",
         "no-underscore-dangle": "off",
-        "no-unmodified-loop-condition": "off",
+        "no-unmodified-loop-condition": "error",
         "no-unneeded-ternary": "error",
         "no-unused-expressions": "warn",
         "no-use-before-define": "off",
