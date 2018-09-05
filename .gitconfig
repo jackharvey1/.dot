@@ -19,7 +19,7 @@
 	name = Jack Harvey
 	email = jack.harvey@news.co.uk
 [core]
-	excludesfile = /Users/jharvey1/.dot/.gitignore
+	excludesfile = /Users/jackharvey/.dot/.gitignore
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -27,7 +27,7 @@
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [commit]
-	template = /Users/jharvey1/.stCommitMsg
+	template = /Users/jackharvey/.stCommitMsg
 [alias]
     graph = log --decorate=full --graph --oneline --all
     wash = remote prune origin
@@ -39,3 +39,5 @@
     #woohoo = "!f(){ git cm 'fix me up' && git rebase -i HEAD^^; };f"
     woohoo = "!f(){ git add . && git commit --amend --no-edit; };f"
     insane = "!f(){ git woohoo && git push -f; };f"
+[credential]
+	helper = store

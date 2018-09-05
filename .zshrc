@@ -1,21 +1,38 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+export COLOR
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/jharvey1/.oh-my-zsh
+export ZSH=/Users/jackharvey/.oh-my-zsh
 
-ZSH_THEME="geometry/geometry"
+# agnoster, bullet-train, geometry, hyperzsh, spaceship
+ZSH_THEME="bullet-train"
 
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(nvm battery history time)
+# bullet-train theme config
+BULLETTRAIN_PROMPT_ORDER=(
+  time
+  dir
+  git
+)
+BULLETTRAIN_DIR_EXTENDED=1
+BULLETTRAIN_GIT_COLORIZE_DIRTY=true
+
+# spaceship theme config
+SPACESHIP_CHAR_SYMBOL="$ "
+SPACESHIP_TIME_SHOW=true
+SPACESHIP_DIR_PREFIX=" "
+SPACESHIP_PACKAGE_SHOW=false
+SPACESHIP_NODE_SHOW=true
+SPACESHIP_NODE_PREFIX="with "
 
 # Uncomment the following line to use case-sensitive completion.
-CASE_SENSITIVE="true"
+# CASE_SENSITIVE="true"
 
-DEFAULT_USER=jharvey1
+DEFAULT_USER=jackharvey
 
 COMPLETION_WAITING_DOTS="true"
 
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git aws npm)
+plugins=(git)
 
 # User configuration
 
@@ -27,9 +44,8 @@ plugins=(git aws npm)
 # else
 #   export EDITOR='mvim'
 # fi
-
 source $ZSH/oh-my-zsh.sh
-for DOTFILE in "/Users/jharvey1/."{alias,functions,vars,node,rvm,eslintrc} do
+for DOTFILE in "/Users/jackharvey/."{alias,functions,vars,node,eslintrc} do
 do
   [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
