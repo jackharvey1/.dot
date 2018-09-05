@@ -15,6 +15,7 @@ EXTRA_DIR="$HOME/.extra"
 ln -sfv "$DOTFILES_DIR/.bash_profile" ~
 ln -sfv "$DOTFILES_DIR/.zshrc" ~
 ln -sfv "$DOTFILES_DIR/.oh-my-zsh.sh" ~
+ln -sfv "$DOTFILES_DIR/.node" ~
 ln -sfv "$DOTFILES_DIR/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/.vimrc" ~
 ln -sfv "$DOTFILES_DIR/.vars" ~
