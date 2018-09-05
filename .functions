@@ -8,6 +8,14 @@ function manpdf() {
     man -t "${1}" | open -f -a /Applications/Preview.app/
 }
 
+function credentials () {
+    local line_number=$(grep -n "$1" ~/.aws/credentials | cut -d ':' -f1)
+    local id_line_number=$((line_number + 1))
+    export AWS_ACCESS_KEY_ID=$(sed -n -e ""${id_line_number}""p"" ~/.aws/credentials | cut -d '=' -f2)
+    local key_line_number=$((id_line_number + 1))
+    export AWS_SECRET_ACCESS_KEY=$(sed -n -e ""${key_line_number}""p"" ~/.aws/credentials | cut -d '=' -f2)
+}
+
 # Extra many types of compressed packages
 # Credit: http://nparikh.org/notes/zshrc.txt
 extract() {
