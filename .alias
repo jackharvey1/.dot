@@ -2,8 +2,6 @@ alias el='~/code/news/elasticsearch-1.7.4/bin/elasticsearch'
 
 alias la='ls -a -CFG'
 
-alias gyarn='rm yarn.lock && yarn && git add yarn.lock && git commit --amend --no-edit && git push -f'↵
-
 alias pdflatex='/usr/local/texlive/2016/bin/x86_64-darwin/pdflatex'
 
 # cd shortcuts

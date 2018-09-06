@@ -39,5 +39,6 @@
     #woohoo = "!f(){ git cm 'fix me up' && git rebase -i HEAD^^; };f"
     woohoo = "!f(){ git add . && git commit --amend --no-edit; };f"
     insane = "!f(){ git woohoo && git push -f; };f"
+    yarn = "!f(){ rm yarn.lock && yarn && git add yarn.lock && git commit --amend --no-edit && git push -f};f"
 [credential]
 	helper = store
