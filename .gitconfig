@@ -33,6 +33,7 @@
     wash = remote prune origin
     rbd = rebase dev
     rbm = rebase master
+    rbom = "!f(){ git checkout master && git pull && git checkout - && git rebase master; };f"
     rbc = rebase -i HEAD^^
     rbcc = rebase -i HEAD^^^
     rbccc = rebase -i HEAD^^^^
