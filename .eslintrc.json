@@ -1,21 +1,27 @@
-module.exports = {
+{
+    "settings": {
+        "react": {
+            "version": "16.0"
+        }
+    },
     "env": {
         "browser": true,
         "node": true,
-        "mocha": true,
+        "jest": true,
         "es6": true
     },
-    "globals": {
-        "Phaser": true,
-        "io": true,
-        "sandbox": true,
-        "sinon": true,
-        "expect": true
-    },
-    "extends": "eslint:recommended",
+    "globals": {},
+    "extends": [
+        "plugin:react/recommended",
+        "eslint:recommended"
+    ],
     "parserOptions": {
-        "ecmaVersion": 2017,
-        "sourceType": "module"
+        "ecmaVersion": 9,
+        "sourceType": "module",
+        "ecmaFeatures": {
+           "jsx": true,
+            "modules": true
+        }
     },
     "rules": {
         "accessor-pairs": "error",
@@ -38,7 +44,7 @@ module.exports = {
         "camelcase": "error",
         "capitalized-comments": "off",
         "class-methods-use-this": "error",
-        "comma-dangle": "error",
+        "comma-dangle": ["error", "always-multiline"],
         "comma-spacing": [
             "error",
             {
@@ -67,7 +73,7 @@ module.exports = {
             "never"
         ],
         "func-style": "off",
-        "generator-star-spacing": ["error", {"before": false, "after": true}],
+        "generator-star-spacing": "error",
         "global-require": "off",
         "guard-for-in": "off",
         "handle-callback-err": "off",
@@ -172,7 +178,7 @@ module.exports = {
         "no-shadow": "off",
         "no-shadow-restricted-names": "error",
         "no-spaced-func": "error",
-        "no-sync": "off",
+        "no-sync": "error",
         "no-tabs": "error",
         "no-template-curly-in-string": "error",
         "no-ternary": "off",
@@ -210,14 +216,14 @@ module.exports = {
         "prefer-reflect": "off",
         "prefer-template": "error",
         "quote-props": "off",
-        "quotes": "off",
+        "quotes": ["error", "single"],
         "radix": "error",
         "require-await": "error",
         "require-jsdoc": "off",
         "rest-spread-spacing": "error",
         "semi": "error",
         "semi-spacing": "error",
-        "sort-imports": "error",
+        "sort-imports": "off",
         "sort-keys": "off",
         "sort-vars": "off",
         "space-before-blocks": "error",
@@ -246,4 +252,4 @@ module.exports = {
             "never"
         ]
     }
-};
+}
