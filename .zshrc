@@ -45,7 +45,7 @@ plugins=(git)
 #   export EDITOR='mvim'
 # fi
 source $ZSH/oh-my-zsh.sh
-for DOTFILE in "/Users/jackharvey/."{alias,functions,vars,node,eslintrc} do
+for DOTFILE in "/Users/jackharvey/."{alias,functions,vars,node} do
 do
   [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
