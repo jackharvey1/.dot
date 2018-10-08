@@ -17,7 +17,7 @@
   default = simple
 [user]
 	name = Jack Harvey
-	email = jack.harvey@news.co.uk
+    email = jackrrv@gmail.com
 [core]
 	excludesfile = /Users/jackharvey/.dot/.gitignore
 [difftool "sourcetree"]
