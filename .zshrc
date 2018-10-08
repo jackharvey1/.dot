@@ -49,3 +49,8 @@ for DOTFILE in "/Users/jackharvey/."{alias,functions,vars,node} do
 do
   [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
+
+ID_RSA=$(ssh-add -l | grep id_rsa)
+if [ -z "$ID_RSA" ]; then
+    eval `ssh-add -k`
+fi
