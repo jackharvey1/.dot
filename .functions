@@ -50,3 +50,17 @@ floop() {
     for d in ./*/; do (cd "$d" && eval $1); done
 }
 
+function assume() {
+    echo -n "Parent account: "
+    read PARENT_ACCOUNT
+    echo -n "Assume account: "
+    read ASSUME_ACCOUNT
+    echo -n "AWS username: "
+    read AWS_USERNAME
+    echo -n "Role: "
+    read ROLE
+    echo -n "MFA Token: "
+    read OTP_TOKEN
+
+    eval $(PARENT_ACCOUNT=$PARENT_ACCOUNT ACCOUNT=$ASSUME_ACCOUNT AWS_USERNAME=$AWS_USERNAME ROLE=$ROLE OTP_TOKEN=$OTP_TOKEN /Users/jackharvey/.dot/scripts/assume-role.sh)
+}
