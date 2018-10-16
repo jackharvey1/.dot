@@ -45,3 +45,8 @@ extract() {
         echo "'$1' is not a valid file to extract"
     fi
 }
+
+floop() {
+    for d in ./*/; do (cd "$d" && eval $1); done
+}
+
