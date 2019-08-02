@@ -54,3 +54,6 @@ ID_RSA=$(ssh-add -l | grep id_rsa)
 if [ -z "$ID_RSA" ]; then
     eval `ssh-add -k`
 fi
+
+# z
+. /usr/local/etc/profile.d/z.sh
