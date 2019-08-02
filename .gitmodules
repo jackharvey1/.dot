@@ -1,0 +1,3 @@
+[submodule ".vim/pack/jack/opt/ale"]
+	path = .vim/pack/jack/opt/ale
+	url = https://github.com/dense-analysis/ale.git
