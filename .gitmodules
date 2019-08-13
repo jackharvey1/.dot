@@ -1,3 +1,6 @@
 [submodule ".vim/pack/jack/opt/ale"]
-	path = .vim/pack/jack/opt/ale
-	url = https://github.com/dense-analysis/ale.git
+	path = .vim/pack/plugins/opt/ale
+        url = git@github.com:dense-analysis/ale.git
+[submodule ".vim/pack/plugins/opt/vim-airline"]
+	path = .vim/pack/plugins/opt/vim-airline
+	url = git@github.com:vim-airline/vim-airline.git

@@ -16,6 +16,10 @@ filetype plugin indent on
 " packadd onedark.vim
 " packadd! syntastic
 packadd ale
+packadd vim-airline
+
+" ALE for airline
+let g:airline#extensions#ale#enabled = 1
 
 " Theme
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
@@ -27,4 +31,4 @@ if (empty($TMUX))
   endif
 endif
 
-colorscheme slate
+colorscheme molokai
