@@ -17,6 +17,8 @@ filetype plugin indent on
 " packadd! syntastic
 packadd ale
 packadd vim-airline
+packadd fzf
+packadd fzf.vim
 
 " ALE for airline
 let g:airline#extensions#ale#enabled = 1

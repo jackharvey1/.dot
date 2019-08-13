@@ -57,3 +57,5 @@ fi
 
 # z
 . /usr/local/etc/profile.d/z.sh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
