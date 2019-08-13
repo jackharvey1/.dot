@@ -19,3 +19,6 @@
 [submodule ".vim/pack/plugins/opt/fzf"]
 	path = .vim/pack/plugins/opt/fzf
 	url = git@github.com:junegunn/fzf.git
+[submodule ".vim/pack/plugins/opt/vim-hcl"]
+	path = .vim/pack/plugins/opt/vim-hcl
+	url = git://github.com/jvirtanen/vim-hcl.git

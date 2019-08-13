@@ -19,6 +19,7 @@ packadd ale
 packadd vim-airline
 packadd fzf
 packadd fzf.vim
+packadd vim-hcl
 
 " ALE for airline
 let g:airline#extensions#ale#enabled = 1
