@@ -31,4 +31,4 @@ if (empty($TMUX))
   endif
 endif
 
-colorscheme molokai
+colorscheme molokai 

@@ -4,3 +4,9 @@
 [submodule ".vim/pack/plugins/opt/vim-airline"]
 	path = .vim/pack/plugins/opt/vim-airline
 	url = git@github.com:vim-airline/vim-airline.git
+[submodule ".vim/pack/colorschemes/opt/molokai"]
+	path = .vim/pack/colorschemes/opt/molokai
+	url = git@github.com:tomasr/molokai.git
+[submodule ".vim/pack/colorschemes/opt/SpacegrayEighties"]
+	path = .vim/pack/colorschemes/opt/SpacegrayEighties
+	url = git@github.com:hhff/SpacegrayEighties.vim.git
