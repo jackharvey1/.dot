@@ -22,3 +22,6 @@
 [submodule ".vim/pack/plugins/opt/vim-hcl"]
 	path = .vim/pack/plugins/opt/vim-hcl
 	url = git://github.com/jvirtanen/vim-hcl.git
+[submodule ".vim/pack/colorschemes/opt/gruvbox"]
+	path = .vim/pack/colorschemes/opt/gruvbox
+	url = git@github.com:morhetz/gruvbox.git

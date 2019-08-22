@@ -31,4 +31,5 @@ let g:netrw_banner = 0
 " map ctrl-i to executing alefix, will pick up fixers defined in ftplugin
 nmap <silent> <C-I> :ALEFix<CR>       
 
-colorscheme molokai
+colorscheme gruvbox
+let g:gruvbox_contrast_dark = "soft"
