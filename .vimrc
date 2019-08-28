@@ -19,6 +19,7 @@ packadd vim-airline
 packadd fzf
 packadd fzf.vim
 packadd vim-hcl
+packadd vim-polyglot
 
 let g:airline#extensions#ale#enabled = 1      " ALE for airline
 
@@ -31,5 +32,5 @@ let g:netrw_banner = 0
 " map ctrl-i to executing alefix, will pick up fixers defined in ftplugin
 nmap <silent> <C-I> :ALEFix<CR>       
 
-colorscheme gruvbox
 let g:gruvbox_contrast_dark = "soft"
+colorscheme gruvbox

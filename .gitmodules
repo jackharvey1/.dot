@@ -25,3 +25,6 @@
 [submodule ".vim/pack/colorschemes/opt/gruvbox"]
 	path = .vim/pack/colorschemes/opt/gruvbox
 	url = git@github.com:morhetz/gruvbox.git
+[submodule ".vim/pack/plugins/opt/vim-polyglot"]
+	path = .vim/pack/plugins/opt/vim-polyglot
+	url = git@github.com:sheerun/vim-polyglot.git

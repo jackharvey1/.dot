@@ -31,6 +31,8 @@ DEFAULT_USER=jackharvey
 
 COMPLETION_WAITING_DOTS="true"
 
+source "$HOME/.vim/pack/colorschemes/opt/gruvbox/gruvbox_256palette_osx.sh"
+
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
@@ -59,3 +61,4 @@ fi
 . /usr/local/etc/profile.d/z.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
