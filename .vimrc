@@ -35,6 +35,7 @@ packadd fzf
 packadd fzf.vim
 packadd vim-hcl
 packadd vim-polyglot
+packadd vim-jsx
 
 let g:airline#extensions#ale#enabled = 1      " ALE for airline
 
