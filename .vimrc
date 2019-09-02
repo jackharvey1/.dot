@@ -39,6 +39,10 @@ packadd vim-jsx
 
 let g:airline#extensions#ale#enabled = 1      " ALE for airline
 
+" Press ctrl-c to toggle highlighting
+let hlstate=0
+nnoremap <c-c> :if (hlstate%2 == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=hlstate+1<cr>
+
 set splitbelow            " create new vsplit below current buffer
 set splitright            " create new split right of current buffer
 
