@@ -41,7 +41,11 @@ let g:airline#extensions#ale#enabled = 1      " ALE for airline
 
 " Press ctrl-c to toggle highlighting
 let hlstate=0
-nnoremap <c-c> :if (hlstate%2 == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=hlstate+1<cr>
+nmap <silent> <C-C> :if (hlstate%2 == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=hlstate+1<CR>
+" map ctrl-i to executing alefix, will pick up fixers defined in ftplugin
+nmap <silent> <C-I> :ALEFix<CR>       
+" map ctrl-n to execute cnext
+nmap <silent> <C-N> :cnext<CR>       
 
 set splitbelow            " create new vsplit below current buffer
 set splitright            " create new split right of current buffer
@@ -49,8 +53,6 @@ set splitright            " create new split right of current buffer
 let g:netrw_liststyle = 1
 let g:netrw_banner = 0
 
-" map ctrl-i to executing alefix, will pick up fixers defined in ftplugin
-nmap <silent> <C-I> :ALEFix<CR>       
 
 let g:gruvbox_contrast_dark = "soft"
 colorscheme gruvbox
