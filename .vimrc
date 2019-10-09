@@ -46,6 +46,7 @@ nmap <silent> <C-C> :if (hlstate%2 == 0) \| nohlsearch \| else \| set hlsearch \
 nmap <silent> <C-I> :ALEFix<CR>       
 " map ctrl-n to execute cnext
 nmap <silent> <C-N> :cnext<CR>       
+nmap <silent> <C-P> :cprev<CR>
 
 set splitbelow            " create new vsplit below current buffer
 set splitright            " create new split right of current buffer
