@@ -40,7 +40,7 @@ packadd vim-jsx
 let g:airline#extensions#ale#enabled = 1      " ALE for airline
 
 " Press ctrl-c to toggle highlighting
-let hlstate=0
+let hlstate=1
 nmap <silent> <C-C> :if (hlstate%2 == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=hlstate+1<CR>
 " map ctrl-i to executing alefix, will pick up fixers defined in ftplugin
 nmap <silent> <C-I> :ALEFix<CR>       
