@@ -51,7 +51,7 @@ nmap <silent> <C-P> :cprev<CR>
 set splitbelow            " create new vsplit below current buffer
 set splitright            " create new split right of current buffer
 
-let g:netrw_liststyle = 1
+let g:netrw_liststyle = 0
 let g:netrw_banner = 0
 
 
