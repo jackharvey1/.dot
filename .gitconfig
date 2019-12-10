@@ -39,6 +39,5 @@
     rbccc = rebase -i HEAD^^^^
     mad = "!f(){ git add . && git commit --amend --no-edit && git push -f; };f"
     insane = "!f() { git add . && git commit --amend --no-edit --no-verify && git push -f --no-verify; };f"
-    yarn = "!f(){ rm yarn.lock && yarn && git add yarn.lock && git commit --amend --no-edit && git push -f};f"
 [credential]
 	helper = store
