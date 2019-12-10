@@ -47,6 +47,7 @@ nmap <silent> <C-I> :ALEFix<CR>
 " map ctrl-n to execute cnext
 nmap <silent> <C-N> :cnext<CR>       
 nmap <silent> <C-P> :cprev<CR>
+nmap <silent> - :E<CR>
 
 set splitbelow            " create new vsplit below current buffer
 set splitright            " create new split right of current buffer
