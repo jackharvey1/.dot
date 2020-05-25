@@ -31,3 +31,6 @@
 [submodule ".vim/pack/plugins/opt/vim-jsx"]
 	path = .vim/pack/plugins/opt/vim-jsx
 	url = git@github.com:mxw/vim-jsx.git
+[submodule ".vim/pack/plugins/opt/fugitive"]
+	path = .vim/pack/plugins/opt/fugitive
+	url = https://tpope.io/vim/fugitive.git
