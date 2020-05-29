@@ -37,6 +37,7 @@ packadd vim-hcl
 packadd vim-polyglot
 packadd vim-jsx
 packadd fugitive
+packadd ack
 :silent autocmd QuickFixCmdPost *grep* cwindow
 
 let g:airline#extensions#ale#enabled = 1      " ALE for airline
