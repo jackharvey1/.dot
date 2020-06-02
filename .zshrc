@@ -1,6 +1,8 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export COLOR
 
+export AWS_PROFILE=saml
+
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/jackharvey/.oh-my-zsh
 
