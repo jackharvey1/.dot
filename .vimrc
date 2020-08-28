@@ -60,4 +60,4 @@ let g:netrw_banner = 0
 
 
 let g:gruvbox_contrast_dark = "soft"
-colorscheme gruvbox
+colorscheme brogrammer
