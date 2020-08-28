@@ -37,3 +37,6 @@
 [submodule ".vim/pack/plugins/opt/ack"]
 	path = .vim/pack/plugins/opt/ack
 	url = git@github.com:mileszs/ack.vim.git
+[submodule ".vim/pack/colorschemes/opt/brogrammer"]
+	path = .vim/pack/colorschemes/opt/brogrammer
+	url = git@github.com:marciomazza/vim-brogrammer-theme.git
