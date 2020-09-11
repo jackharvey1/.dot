@@ -64,3 +64,9 @@ function assume() {
 
     eval $(PARENT_ACCOUNT=$PARENT_ACCOUNT ACCOUNT=$ASSUME_ACCOUNT AWS_USERNAME=$AWS_USERNAME ROLE=$ROLE OTP_TOKEN=$OTP_TOKEN /Users/jackharvey/.dot/scripts/assume-role.sh)
 }
+
+jdk() {
+    version=$1
+    export JAVA_HOME=$(/usr/libexec/java_home -v"$version");
+    java -version
+}
