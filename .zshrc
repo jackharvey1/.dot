@@ -3,6 +3,9 @@ export COLOR
 
 export AWS_PROFILE=saml
 
+# do not check for secure directories
+export ZSH_DISABLE_COMPFIX="true"
+
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/jackharvey/.oh-my-zsh
 
