@@ -21,4 +21,4 @@ ln -sfv "$DOTFILES_DIR/.functions" ~
 ln -sfv "$DOTFILES_DIR/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/.vimrc" ~
 ln -sfv "$DOTFILES_DIR/.vars" ~
-ln -sfv "$DOTFILES_DIR/.vim" ~
+ln -sFv "$DOTFILES_DIR/.vim" ~
