@@ -55,8 +55,8 @@ nmap <silent> - :E<CR>
 
 set splitbelow            " create new vsplit below current buffer
 set splitright            " create new split right of current buffer
-nnoremap <silent> <leader>s :sp.<CR>
-nnoremap <silent> <leader>v :vsp.<CR>
+nnoremap <silent> <leader>s :sp<CR>
+nnoremap <silent> <leader>v :vsp<CR>
 nnoremap <silent> <leader>q :q<CR>
 nnoremap <silent> <leader>t :Tex<CR>
 nnoremap <silent> <leader>i <C-w>:ALEFix<CR>
