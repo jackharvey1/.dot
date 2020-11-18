@@ -64,5 +64,9 @@ nnoremap <silent> <leader>i <C-w>:ALEFix<CR>
 let g:netrw_liststyle = 0
 let g:netrw_banner = 0
 
+set foldmethod=syntax   " syntax highlighting items specify folds
+set foldlevelstart=99   " ensure all folds are open when we open a file
+let javaScript_fold=1   " activate folding by JS syntax
+
 let g:gruvbox_contrast_dark = "soft"
 colorscheme brogrammer
