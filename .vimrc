@@ -55,15 +55,14 @@ nmap <silent> - :E<CR>
 
 set splitbelow            " create new vsplit below current buffer
 set splitright            " create new split right of current buffer
-nnoremap <silent> <leader>s :sp<CR>
-nnoremap <silent> <leader>v :vsp<CR>
+nnoremap <silent> <leader>s :sp.<CR>
+nnoremap <silent> <leader>v :vsp.<CR>
 nnoremap <silent> <leader>q :q<CR>
 nnoremap <silent> <leader>t :Tex<CR>
 nnoremap <silent> <leader>i <C-w>:ALEFix<CR>
 
 let g:netrw_liststyle = 0
 let g:netrw_banner = 0
-
 
 let g:gruvbox_contrast_dark = "soft"
 colorscheme brogrammer
