@@ -41,3 +41,5 @@
     insane = "!f() { git add . && git commit --amend --no-edit --no-verify && git push -f --no-verify; };f"
 [credential]
 	helper = store
+[pull]
+	rebase = true
