@@ -69,4 +69,4 @@ set foldlevelstart=99   " ensure all folds are open when we open a file
 let javaScript_fold=1   " activate folding by JS syntax
 
 let g:gruvbox_contrast_dark = "soft"
-colorscheme brogrammer
+colorscheme molokai
