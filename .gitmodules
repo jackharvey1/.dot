@@ -1,42 +1,12 @@
-[submodule ".vim/pack/jack/opt/ale"]
-	path = .vim/pack/plugins/opt/ale
-        url = git@github.com:dense-analysis/ale.git
-[submodule ".vim/pack/plugins/opt/vim-airline"]
-	path = .vim/pack/plugins/opt/vim-airline
-	url = git@github.com:vim-airline/vim-airline.git
 [submodule ".vim/pack/colorschemes/opt/molokai"]
 	path = .vim/pack/colorschemes/opt/molokai
 	url = git@github.com:tomasr/molokai.git
 [submodule ".vim/pack/colorschemes/opt/SpacegrayEighties"]
 	path = .vim/pack/colorschemes/opt/SpacegrayEighties
 	url = git@github.com:hhff/SpacegrayEighties.vim.git
-[submodule ".vim/pack/plugins/fzf"]
-	path = .vim/pack/plugins/fzf
-	url = https://github.com/junegunn/fzf.git
-[submodule ".vim/pack/plugins/opt/fzf.vim"]
-	path = .vim/pack/plugins/opt/fzf.vim
-	url = git@github.com:junegunn/fzf.vim.git
-[submodule ".vim/pack/plugins/opt/fzf"]
-	path = .vim/pack/plugins/opt/fzf
-	url = git@github.com:junegunn/fzf.git
-[submodule ".vim/pack/plugins/opt/vim-hcl"]
-	path = .vim/pack/plugins/opt/vim-hcl
-	url = git://github.com/jvirtanen/vim-hcl.git
 [submodule ".vim/pack/colorschemes/opt/gruvbox"]
 	path = .vim/pack/colorschemes/opt/gruvbox
 	url = git@github.com:morhetz/gruvbox.git
-[submodule ".vim/pack/plugins/opt/vim-polyglot"]
-	path = .vim/pack/plugins/opt/vim-polyglot
-	url = git@github.com:sheerun/vim-polyglot.git
-[submodule ".vim/pack/plugins/opt/vim-jsx"]
-	path = .vim/pack/plugins/opt/vim-jsx
-	url = git@github.com:mxw/vim-jsx.git
-[submodule ".vim/pack/plugins/opt/fugitive"]
-	path = .vim/pack/plugins/opt/fugitive
-	url = https://tpope.io/vim/fugitive.git
-[submodule ".vim/pack/plugins/opt/ack"]
-	path = .vim/pack/plugins/opt/ack
-	url = git@github.com:mileszs/ack.vim.git
 [submodule ".vim/pack/colorschemes/opt/brogrammer"]
 	path = .vim/pack/colorschemes/opt/brogrammer
 	url = git@github.com:marciomazza/vim-brogrammer-theme.git
