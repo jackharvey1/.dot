@@ -17,9 +17,10 @@
   default = simple
 [user]
 	name = Jack Harvey
-    email = jackrrv@gmail.com
+	email = jackrrv@gmail.com
 [core]
 	excludesfile = /Users/jackharvey/.dot/.gitignore
+	editor = nvim
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
