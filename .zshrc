@@ -42,6 +42,9 @@ plugins=(git)
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
+export PATH="$PATH:/Users/jackharvey/Library/Application Support/Coursier/bin"
+export PATH="$PATH:/Users/jackharvey/code/clearscore/mimi/"
+export PATH="$PATH:/Users/jackharvey/code/clearscore/mimi/config-scripts"
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
