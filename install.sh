@@ -26,3 +26,4 @@ ln -sfv "$DOTFILES_DIR/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/.vimrc" ~
 ln -sfv "$DOTFILES_DIR/.vars" ~
 ln -sFv "$DOTFILES_DIR/.vim" ~
+ln -sfv "$DOTFILES_DIR/.vimrc" ~/.config/nvim/init.vim
