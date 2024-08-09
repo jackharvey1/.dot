@@ -50,7 +50,7 @@ call plug#end()
 " Press ctrl-c to toggle highlighting
 let hlstate=1
 nmap <silent> <C-C> :if (hlstate%2 == 0) \| nohlsearch \| else \| set hlsearch \| endif \| let hlstate=hlstate+1<CR>
-nmap <silent> - :E<CR>
+nmap <silent>- :E<CR>
 
 set splitbelow            " create new vsplit below current buffer
 set splitright            " create new split right of current buffer

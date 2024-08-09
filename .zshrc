@@ -7,7 +7,7 @@ export AWS_PROFILE=saml
 export ZSH_DISABLE_COMPFIX="true"
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/jackharvey/.oh-my-zsh
+export ZSH=/Users/jack.harvey/.oh-my-zsh
 
 # agnoster, bullet-train, geometry, hyperzsh, spaceship
 ZSH_THEME="bullet-train"
@@ -32,7 +32,7 @@ SPACESHIP_NODE_PREFIX="with "
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
-DEFAULT_USER=jackharvey
+DEFAULT_USER=jack.harvey
 
 COMPLETION_WAITING_DOTS="true"
 
@@ -42,9 +42,9 @@ plugins=(git)
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
-export PATH="$PATH:/Users/jackharvey/Library/Application Support/Coursier/bin"
-export PATH="$PATH:/Users/jackharvey/code/clearscore/mimi/"
-export PATH="$PATH:/Users/jackharvey/code/clearscore/mimi/config-scripts"
+export PATH="$PATH:/Users/jack.harvey/Library/Application Support/Coursier/bin"
+export PATH="$PATH:/Users/jack.harvey/code/clearscore/mimi/"
+export PATH="$PATH:/Users/jack.harvey/code/clearscore/mimi/config-scripts"
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -53,7 +53,7 @@ export PATH="$PATH:/Users/jackharvey/code/clearscore/mimi/config-scripts"
 #   export EDITOR='mvim'
 # fi
 source $ZSH/oh-my-zsh.sh
-for DOTFILE in "/Users/jackharvey/."{alias,functions,vars,node} do
+for DOTFILE in "/Users/jack.harvey/."{alias,functions,vars,node} do
 do
   [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
@@ -64,7 +64,11 @@ if [ -z "$ID_RSA" ]; then
 fi
 
 # z
-. /usr/local/etc/profile.d/z.sh
+. /opt/homebrew/etc/profile.d/z.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
