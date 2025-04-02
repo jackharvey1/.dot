@@ -1,24 +1,3 @@
-alias el='~/code/news/elasticsearch-1.7.4/bin/elasticsearch'
-
 alias la='ls -a -CFG'
 
-alias pdflatex='/usr/local/texlive/2016/bin/x86_64-darwin/pdflatex'
-
-# cd shortcuts
-alias me='cd ~/code/me'
-alias pew='cd ~/code/me/pewpew'
-
-# elasticsearch
-alias recovery_status='curl -s localhost:9200/_recovery | jq ".[].shards[].index.files.percent | .[0:-1] | tonumber" | jq -s add/length'
-alias el_open='curl -XPOST localhost:9200/tagging/_open && curl -XPOST localhost:9200/data_news/_open && curl -XPOST localhost:9200/news/_open'
-alias el_close='curl -XPOST localhost:9200/tagging/_close && curl -XPOST localhost:9200/data_news/_close && curl -XPOST localhost:9200/news/_close'
-
-# android
-alias nexus5='~/Library/Android/sdk/tools/emulator -avd Nexus_5X_API_25 -netdelay none -netspeed full'
-alias nexus6='~/Library/Android/sdk/tools/emulator -avd Nexus_6P_API_23 -netdelay none -netspeed full'
-
-# teamcity
-alias disc_agent='aws --profile=core-svcs --region=eu-west-1 ec2 describe-instances --filters Name=tag:Name,Values=TeamCityAgentStatic Name=instance-state-name,Values=running --query '\''Reservations[].Instances[].{IP:PrivateIpAddress,ID:InstanceId,AZ:Placement.AvailabilityZone}'\'' --output text'
-alias disc_agentx='aws --profile=core-svcs --region=eu-west-1 ec2 describe-instances --filters Name=tag:Name,Values=IntegrationTestBoy Name=instance-state-name,Values=running --query '\''Reservations[].Instances[].{IP:PrivateIpAddress,ID:InstanceId,AZ:Placement.AvailabilityZone}'\'' --output text'
-
-alias pcurl='curl --silent -o /dev/null -v -H "Pragma: akamai-x-cache-on, akamai-x-cache-remote-on, akamai-x-check-cacheable, akamai-x-get-cache-key, akamai-x-get-extracted-values, akamai-x-get-nonces, akamai-x-get-ssl-client-session-id, akamai-x-get-true-cache-key, akamai-x-serial-no"'
+alias nuget="mono /usr/local/bin/nuget.ext"
