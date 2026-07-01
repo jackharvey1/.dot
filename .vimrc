@@ -12,8 +12,6 @@ set softtabstop=4
 set bs=2
 let mapleader = ","
 
-let g:netrw_keepdir=0
-
 let &t_SI.="\e[5 q" "SI = INSERT mode
 let &t_SR.="\e[4 q" "SR = REPLACE mode
 let &t_EI.="\e[2 q" "EI = NORMAL mode (ELSE)
@@ -59,9 +57,6 @@ nnoremap <silent> <leader>v :vsp.<CR>
 nnoremap <silent> <leader>q :q<CR>
 nnoremap <silent> <leader>t :Tex<CR>
 nnoremap <silent> <leader>i <C-w>:ALEFix<CR>
-
-let g:netrw_liststyle = 0
-let g:netrw_banner = 0
 
 set foldmethod=syntax   " syntax highlighting items specify folds
 set foldlevelstart=99   " ensure all folds are open when we open a file
