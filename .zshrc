@@ -1,8 +1,6 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export COLOR
 
-export AWS_PROFILE=saml
-
 # do not check for secure directories
 export ZSH_DISABLE_COMPFIX="true"
 
@@ -69,3 +67,7 @@ export NVM_DIR="$HOME/.nvm"
 # java
 export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk@21/bin:$PATH"
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+export PATH="/opt/homebrew/opt/dotnet@8/bin:$PATH"
+export PATH="/Users/jack.harvey/.local/bin:$PATH"
